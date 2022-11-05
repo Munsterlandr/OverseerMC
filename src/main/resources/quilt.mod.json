@@ -5,10 +5,10 @@
 		"id": "example_mod",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Overseer",
+			"description": "Implements an authoritarian regime that uses a social credits system.",
 			"contributors": {
-				"Your name here": "Owner"
+				"Your name here": "Munsterlandr"
 			},
 			"contact": {
 				"homepage": "https://example.com/",
@@ -19,7 +19,8 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"adapter": "kotlin"
+			"init": "munsterlandr.overseer.Overseer"
 		},
 		"depends": [
 			{
@@ -36,5 +37,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "overseer.mixins.json"
 }
